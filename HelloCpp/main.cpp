@@ -1,24 +1,18 @@
 #include <iostream>
 #include <cassert>
 
+#include "../StaticLib/foo.h"
+
 #include "foo.h"
 
-#if _DEBUG
-void foo() {}
-#endif
-
-#define MUL(a,b) a*b
+using namespace std;
 
 int main() 
 {
-	int x = 1;
-	int result = add1(x);
 
-	assert(MUL(2, 2+2) == 8);
+	cout << "2+3 = " << add(2, 3) << endl;
 
-	foo();
-
-	std::cout << "Hello, C++" << std::endl;
+	cout << "Hello, C++" << endl;
 	getchar();
 
 	return 0;
