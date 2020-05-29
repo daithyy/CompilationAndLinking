@@ -12,9 +12,7 @@ void foo() {}
 int main() 
 {
 	int x = 1;
-
-	int result;
-	result = add1(x);
+	int result = add1(x);
 
 	assert(MUL(2, 2+2) == 8);
 
